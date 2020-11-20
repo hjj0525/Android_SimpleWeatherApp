@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 String city = editText.getText().toString();
-                String content = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=ddbc49d9fe249b781ff7ba92d94105b8";
+                String content = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid="+your_id;
                 callWeatherData(content);
                 textView.setText(city);
             }
